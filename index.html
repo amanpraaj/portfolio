@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="src/css/main.css">
+    <link  rel="stylesheet" href="src/css/gsap-cursor.css">
     <link rel="icon" href="src/images/1.jpg" type="image/x-icon">
     <!-- - google font link -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <div class="cursor"></div>
     <div class="container">
         <section>
             <div class="about">
                 <div class="about-info">
-                    <div class="image">
-                        <img src="src/images/1.png" alt="Aman Prajapati">
+                    <div class="image cursor-scale">
+                        <img src="src/images/-1.png" alt="Aman Prajapati">
                     </div>
                     <div class="name">Aman Prajapat ⚡</div>
                     <div class="title">Web Developer</div>
@@ -160,6 +162,8 @@
             </article>
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="src/js/gsap-cursor.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
