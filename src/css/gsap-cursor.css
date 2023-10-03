@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:0 60px;
+    z-index: 10;
+}
+.header-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;   
+}
+.logo a{
+    display: block;
+}
+.logo img{
+    height: 50px;
+    display: block;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav li + li{
+    margin-left:16px;
+}
+.nav li a{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border:2px solid #16a085;
+    color:#16a085;
+    border-radius: 2em;
+    display: block;
+}
+.hero-text{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.hero-text h1{
+    font-size: 170px;
+    line-height: 1;
+    font-weight: 700;
+    background-color: #f4d03f;
+    background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+    -webkit-background-clip: text;
+    color:transparent
+}
+.hero-text h2{
+    font-size:84px;
+    color:#fff;
+    display: inline-flex;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding:0 60px;
+    color:#16a085;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+}
+.footer-nav li + li{
+    margin-left: 16px;
+}
+.footer-nav li a{
+    font-size: 18px;
+    color:#16a085;
+}
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.8;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+.glow, .glow-small{
+    opacity: 1;
+    transform: scale(4);
+    background: url(../images/1.jpg);
+    background-size: cover;
+    border: none;
+    mix-blend-mode: normal;
+}
+.glow-small{
+    transform: scale(2.5);
+
+}
