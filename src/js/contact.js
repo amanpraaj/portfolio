@@ -1,4 +1,4 @@
-const url = '../php/contact.php';
+const url = 'https://about.amanpraaj.eu.org/src/php/contact_form.php';
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
