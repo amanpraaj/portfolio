@@ -1,4 +1,4 @@
-const url = 'php/contact.php';
+const url = '../php/contact.php';
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
