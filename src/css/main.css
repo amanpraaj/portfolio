@@ -143,8 +143,7 @@ ion-icon[name="logo-github"]:hover{
 }
 
 .details ul {
-  list-style-type: none;
-  padding: 0;
+    margin-left: 20px;
 }
 
 .details li {
@@ -180,6 +179,10 @@ ion-icon[name="logo-github"]:hover{
     z-index: 5;
     padding: 10px;
   }
+  .tab-button
+  {
+    max-width: 18%;
+  }
   .container {
     padding-bottom: 10vh;
 }
@@ -200,7 +203,6 @@ ion-icon[name="logo-github"]:hover{
   background-color:  #383838;
   border-radius: 10px;
   color: #fff;
-  max-width: 18%;
   border: none;
   outline: none;
 }
