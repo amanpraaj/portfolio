@@ -181,7 +181,7 @@ ion-icon[name="logo-github"]:hover{
     padding: 10px;
   }
   .container {
-    padding-bottom: 16%;
+    padding-bottom: 10vh;
 }
 }
 
