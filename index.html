@@ -133,28 +133,17 @@
             want to have a friendly chat, here's how you can reach out:
         </p>
        <h1>Contact Us</h1>
-            <form
-  action="https://formspree.io/f/xaygvrje"
-  method="POST"
->
-                          <label>
-    Your Name:
-    <textarea name="name" placeholder="Your name"></textarea>
-  </label>
-  <label>
-    Your email:
-    <input type="email" name="email" placeholder="Your email">
-  </label>
-               <label>
-    Your Subject:
-              <input name="subject" value="Need help with order" />
-               </label>
-  <label>
-    Your message:
-    <textarea name="message" placeholder="Your message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaygvrje" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+    <label for="email-address">Email Address</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="message">Message</label>
+    <textarea rows="5" name="message" id="message" placeholder="Your Message Go Here..." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Submit">
 </form>
         <p>
             I'm super eager to hear from you and explore new adventures together.
@@ -166,6 +155,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="src/js/gsap-cursor.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="src/js/contact.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
