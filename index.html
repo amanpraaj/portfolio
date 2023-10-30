@@ -133,17 +133,28 @@
             want to have a friendly chat, here's how you can reach out:
         </p>
        <h1>Contact Us</h1>
-    <form id="contactForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
-
-    <input type="submit" value="Send Message">
+            <form
+  action="https://formspree.io/f/xaygvrje"
+  method="POST"
+>
+                          <label>
+    Your Name:
+    <textarea name="name" placeholder="Your name"></textarea>
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email" placeholder="Your email">
+  </label>
+               <label>
+    Your Subject:
+              <input name="subject" value="Need help with order" />
+               </label>
+  <label>
+    Your message:
+    <textarea name="message" placeholder="Your message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
         <p>
             I'm super eager to hear from you and explore new adventures together.
@@ -155,8 +166,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="src/js/gsap-cursor.js"></script>
     <script src="src/js/main.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="src/js/contact.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
