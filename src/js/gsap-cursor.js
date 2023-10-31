@@ -1,11 +1,11 @@
-var cursor = document.querySelector('.cursor'),
-    cursorScale = document.querySelectorAll('.cursor-scale'),
-    mouseX = 0,
-    mouseY = 0
+var cursor = document.querySelector('.cursor');
+var cursorScale = document.querySelectorAll('.cursor-scale');
+var cursorAnchor = document.querySelectorAll('a, .gg,button,input,textarea');
+var mouseX = 0;
+var mouseY = 0;
 
 gsap.to({}, 0.016, {
     repeat: -1,
-
     onRepeat: function() {
         gsap.set(cursor, {
             css: {
@@ -21,21 +21,24 @@ window.addEventListener('mousemove', function(e) {
     mouseY = e.clientY;
 });
 
-window.addEventListener("mousedown", function (e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-})
-
-cursorScale.forEach(link => {
-    link.addEventListener("mousemove", function () {
+for (var i = 0; i < cursorScale.length; i++) {
+    cursorScale[i].addEventListener("mousemove", function() {
         cursor.classList.add("glow");
-        if(link.classList.contains("small")) {
-            cursor.classList.remove("glow");
-            cursor.classList.add("glow-small");
-        }
-    });
-    link.addEventListener("mouseleave", function () {
-        cursor.classList.remove("glow");
         cursor.classList.remove("glow-small");
     });
-});
+
+    cursorScale[i].addEventListener("mouseleave", function() {
+        cursor.classList.remove("glow");
+    });
+}
+
+for (var j = 0; j < cursorAnchor.length; j++) {
+    cursorAnchor[j].addEventListener("mousemove", function() {
+        cursor.classList.add("glow-small");
+        cursor.classList.remove("glow");
+    });
+
+    cursorAnchor[j].addEventListener("mouseleave", function() {
+        cursor.classList.remove("glow-small");
+    });
+}
