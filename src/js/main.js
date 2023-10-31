@@ -22,3 +22,17 @@ function showTab(tabIndex) {
 
 // Show the first tab by default
 showTab(0);
+//Changing Text Animation 
+const values = ["Web Developer", "Content Writer", "Youtuber", "Student", "UI/UX Designer", "Photo/Video Editor","Developer"];
+const dynamicText = document.querySelector("#dynamicText");
+let currentIndex = 0;
+function changeTextWithAnimation() {
+  dynamicText.style.opacity = 0;
+  setTimeout(() => {
+    dynamicText.textContent = values[currentIndex];
+    dynamicText.style.opacity = 1;
+    currentIndex = (currentIndex + 1) % values.length;
+  }, 500);
+}
+changeTextWithAnimation();
+setInterval(changeTextWithAnimation, 3000);
