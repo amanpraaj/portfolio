@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="stylesheet" href="src/css/gsap-cursor.css" />
     <link rel="icon" href="src/images/1.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/contact.css">
     <!-- - google font link -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
@@ -22,8 +23,12 @@
             <div class="image cursor-scale">
               <img src="src/images/-1.png" alt="Aman Prajapati" />
             </div>
+            <div class="about-data">
             <div class="name">Aman Prajapat ⚡</div>
-            <div class="title">Web Developer</div>
+            <div>
+              I'm <span id="dynamicText" class="title"></span>
+            </div>
+          </div>
           </div>
           <div class="separator"></div>
           <div class="about-more">
@@ -126,25 +131,33 @@
             and growing.
         </p>
           </diV>
-          <div class="tab" id="tab4">
+          <div class="tab" id="contact-form">
           <h2>Get in Touch</h2>
         <p>
             I'd be thrilled to connect with you! Whether you're curious about my projects, want to collaborate, or just
             want to have a friendly chat, here's how you can reach out:
         </p>
-       <h1>Contact Us</h1>
-       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaygvrje" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Your Message Go Here..." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-  </fieldset>
-  <input type="submit" value="Submit">
-</form>
+       <h2>Contact Us</h2>
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <div class="iblock">
+              <input type="text" id="fname" placeholder="First Name" name="fname" required>
+              <input type="text" id="lname" placeholder="Last Name" name="lname" required><br>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Eg. example@domain.com" required><br>
+            <label for="phoneNumber">Mobile Number (with Country Code):</label>
+            <input type="tel" id="phoneNumber" placeholder="Eg. +91 1234567890" name="phoneNumber" required><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Your Subject" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message go here..." rows="4"
+              required></textarea><br>
+            <div class='btn-block'>
+              <button type="submit">Submit <i class="arrow right"></i></button>
+              <div id="messageStatus"></div>
+            </div>
+          </form>
         <p>
             I'm super eager to hear from you and explore new adventures together.
         </p>
