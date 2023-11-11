@@ -28,7 +28,6 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 4;
   padding: 20px;
 }
 a{
@@ -41,13 +40,11 @@ section {
   justify-content: space-between;
   gap: 20px;
 }
-.about,.details{
-  background: 	rgba(30,30,31,0.34);
-  backdrop-filter: blur(10px);
-}
 .about {
   flex: 1;
   border-radius: 10px;
+  background: 	rgba(30,30,31,0.34);
+  backdrop-filter: blur(10px);
   border: 1px solid #383838;
   padding: 20px;
 }
@@ -145,6 +142,7 @@ ion-icon[name="logo-github"]:hover{
   display: flex;
   flex: 2;
   border-radius: 10px;
+  background: 	rgba(30, 30, 31, 0.712);
   border: 1px solid #383838;
   padding: 20px;
   flex-wrap: wrap;
