@@ -1,0 +1,11 @@
+/* styles.css */
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0; /* Initialize the width to 0 */
+    height: 4px;
+    background-color: #ffc83d; /* Use the desired color for the progress bar */
+    z-index: 9999;
+    transition: width 0.3s ease; /* Add the width transition for smooth animation */
+}
