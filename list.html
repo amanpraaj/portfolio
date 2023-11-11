@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .bac {
+            position: relative;
+            display: block;
+        }
+
+        .line::before {
+            position: absolute;
+            content: "";
+            left: -26px;
+            width: 4px;
+            height: 100%;
+            background-color: rgb(155, 155, 255);
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .line li::marker {
+            color: rgb(0, 0, 175);
+            font-size: 40px;
+            z-index: 99;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <div class="bac">
+            <div class="line">
+                <li>
+                   
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sequi, vitae, voluptatibus
+                        voluptatem, eveniet sunt deleniti amet commodi at voluptate libero facere provident repudiandae
+                        eos deserunt animi accusamus culpa excepturi.
+                </li>
+                <li>
+                    <h1>Hello World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sequi, vitae, voluptatibus
+                        voluptatem, eveniet sunt deleniti amet commodi at voluptate libero facere provident repudiandae
+                        eos deserunt animi accusamus culpa excepturi.</p>
+                </li>
+                <li>
+                    <h1>Hello World</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sequi, vitae, voluptatibus
+                        voluptatem, eveniet sunt deleniti amet commodi at voluptate libero facere provident repudiandae
+                        eos deserunt animi accusamus culpa excepturi.</p>
+                </li>
+            </div>
+    </ul>
+</body>
+
+</html>
