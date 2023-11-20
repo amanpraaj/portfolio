@@ -104,14 +104,17 @@ body{
     z-index: 1000;
     mix-blend-mode: difference;
 }
-.glow{
+.img-cursor{
     background: url(../images/my.png);
     transform: scale(8);
     background-size: cover;
     mix-blend-mode: normal;
     opacity: 1;
 }
-.glow-small{
+.btn-cursor{
+    transform: scale(2);
+}
+.cursor-b{
     background-color: rgba(196, 196, 196, 0.027);
     backdrop-filter: blur(0.4px);
     border:0.03px solid rgba(255, 255, 255, 0.205);
