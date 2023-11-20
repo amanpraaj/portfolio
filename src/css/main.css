@@ -47,6 +47,9 @@ section {
   backdrop-filter: blur(10px);
   border: 1px solid #383838;
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  height: 100%;
 }
 
 .about-info {
