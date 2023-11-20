@@ -43,8 +43,7 @@ section {
 .about {
   flex: 1;
   border-radius: 10px;
-  background: 	rgba(30,30,31,0.34);
-  backdrop-filter: blur(10px);
+  background: rgba(30, 30, 31, 0.712);
   border: 1px solid #383838;
   padding: 20px;
   position: sticky;
