@@ -43,13 +43,13 @@ for (var j = 0; j < cursorAnchor.length; j++) {
         cursor.classList.remove("cursor-b");
     });
 }
-for (var k = 0; k < cursorAnchor.length; k++) {
-    cursorBtn[k].addEventListener("mousemove", function() {
+for (var k = 0; k < btnn.length; k++) {
+    btnn[k].addEventListener("mousemove", function() {
         cursor.classList.add("btn-cursor");
         cursor.classList.remove("img-cursor");
     });
 
-    cursorAnchor[k].addEventListener("mouseleave", function() {
+    btnn[k].addEventListener("mouseleave", function() {
         cursor.classList.remove("btn-cursor");
     });
 }
