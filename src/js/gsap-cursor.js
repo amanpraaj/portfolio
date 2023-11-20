@@ -1,6 +1,7 @@
 var cursor = document.querySelector('.cursor');
 var cursorScale = document.querySelectorAll('.cursor-scale');
-var cursorAnchor = document.querySelectorAll('a, .gg,button,input,textarea');
+var cursorAnchor = document.querySelectorAll('a, .gg,input,textarea');
+var btnn = document.querySelectorAll('button');
 var mouseX = 0;
 var mouseY = 0;
 
@@ -23,22 +24,33 @@ window.addEventListener('mousemove', function(e) {
 
 for (var i = 0; i < cursorScale.length; i++) {
     cursorScale[i].addEventListener("mousemove", function() {
-        cursor.classList.add("glow");
-        cursor.classList.remove("glow-small");
+        cursor.classList.add("img-cursor");
+        cursor.classList.remove("cursor-b");
     });
 
     cursorScale[i].addEventListener("mouseleave", function() {
-        cursor.classList.remove("glow");
+        cursor.classList.remove("img-cursor");
     });
 }
 
 for (var j = 0; j < cursorAnchor.length; j++) {
     cursorAnchor[j].addEventListener("mousemove", function() {
-        cursor.classList.add("glow-small");
-        cursor.classList.remove("glow");
+        cursor.classList.add("cursor-b");
+        cursor.classList.remove("img-cursor");
     });
 
     cursorAnchor[j].addEventListener("mouseleave", function() {
-        cursor.classList.remove("glow-small");
+        cursor.classList.remove("cursor-b");
     });
 }
+for (var k = 0; k < cursorAnchor.length; k++) {
+    cursorBtn[k].addEventListener("mousemove", function() {
+        cursor.classList.add("btn-cursor");
+        cursor.classList.remove("img-cursor");
+    });
+
+    cursorAnchor[k].addEventListener("mouseleave", function() {
+        cursor.classList.remove("btn-cursor");
+    });
+}
+
