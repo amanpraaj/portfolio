@@ -31,9 +31,9 @@ document
 
 *Subject:* ${subject}
 *Message:*
-\`\`\`
+${"```"}Message 
 ${message}
-\`\`\`
+${"```"}
 
 *Link:* [${pageTitle}](${hostname})
 `;
