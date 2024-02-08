@@ -11,7 +11,7 @@ document
         const message = document.getElementById("message").value;
         const hostname = window.location.hostname;
         const pageTitle = document.title; // Get the current page title
-        const modifiedTitle = pageTitle.replace(/ /g, "_");
+        //const modifiedTitle = pageTitle.replace(/ /g, "_");
         const maxMessageLength = 3700; // Set your desired character limit
 
         if (message.length > maxMessageLength) {
@@ -24,7 +24,7 @@ document
 
         // Create a message with enhanced formatting
         const messageText = `
-    *#NewMessage* On *#${modifiedTitle}*
+    *#NewMessage* On *#Portfolio*
 
 *Name :* ${fname} ${lname}
 *Email :* [${email}](mailto:${email})
