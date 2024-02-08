@@ -25,18 +25,16 @@ document
         const messageText = `
     *#NewMessage* On *#${pageTitle}*
 
-*Name:* ${fname} ${lname}
-*Email:* [${email}](mailto:${email})
-*Mobile Number:* ${phoneNumber}
+*Name :* ${fname} ${lname}
+*Email :* [${email}](mailto:${email})
+*Mobile Number :* ${phoneNumber}
+*From :* [${pageTitle}](${hostname})
 
 *Subject:* ${subject}
 *Message:*
-${"```"}Message 
+\`\`\`
 ${message}
-${"```"}
-
-*Link:* [${pageTitle}](${hostname})
-`;
+\`\`\`;
         const parseMode = "Markdown";
 
         fetch(
