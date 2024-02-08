@@ -49,7 +49,8 @@ ${message}
             .then((data) => {
                 console.log("Message sent:", data);
                 document.getElementById("messageStatus").style.display = "block";
-                document.getElementById("messageStatus").style.backgroundColor = "#00ff6263";
+                document.getElementById("messageStatus").style.backgroundColor = "rgb(0 0 0 / 44%)";
+                document.getElementById("messageStatus").style.color = "#00ff6263";
                 document.getElementById("messageStatus").textContent =
                     "Message sent successfully!";
                 document.getElementById("contactForm").reset();
@@ -57,7 +58,8 @@ ${message}
             .catch((error) => {
                 console.error("Message not sent:", error);
                 document.getElementById("messageStatus").style.display = "block";
-                document.getElementById("messageStatus").style.backgroundColor = "#ff000063";
+                document.getElementById("messageStatus").style.backgroundColor = "rgb(0 0 0 / 44%)";
+                document.getElementById("messageStatus").style.color = "#ff000063";
                 document.getElementById("messageStatus").textContent =
                     "Message not sent. Please try again later.";
             });
